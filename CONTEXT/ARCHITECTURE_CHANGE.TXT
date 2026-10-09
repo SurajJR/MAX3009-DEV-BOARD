@@ -1,0 +1,51 @@
+  1 # MayaCardio — MAX30009 Design Objectives and Architecture Changes
+2
+3 # Part I — Design Objectives
+4
+5 ### O1 — Excitation Integrity
+6
+7 The delivered drive current equals the commanded current at every (current, frequency) in the ICG and BCA schedules on
+a body-like load, and the board itself consumes only a small, known share of the compliance window.
+8
+9 ### O2 — Receive-Path Fidelity on Body-Like Loads
+10
+11 The sense path rejects the common-mode carrier that a person (not a resistor) produces, so impedance on a person is as
+accurate as on a bench load.
+12
+13 ### O3 — Noise Floor: Broadband and Spurs
+14
+15 The board adds little to the chip's own noise in the ICG band and adds no discrete lines.
+16
+17 ### O4 — Calibration Accuracy and Traceability
+18
+19 Calibration is traceable, covers the clinical impedance band, and states which parts of the electrode path are inside
+the correction.
+20
+21 ### O5 — Long-Duration Stability
+22
+23 Impedance on a fixed load is stable over a full clinical session after a short, declared warm-up, and drift can be
+attributed.
+24
+25 ### O6 — Low-Noise Power Tree
+26
+27 Supply noise from the motherboard and isolated converter does not reach the AFE, digital activity does not modulate
+AVDD/VREF, and the isolated rail has margin.
+28
+29 ### O7 — Layout and Grounding Integrity
+30
+31 The copper gives every analog signal a continuous return, keeps drive away from sense, keeps the sense pair symmetric,
+and keeps aggressors away from the AFE.
+32
+33 ### O8 — Observability and Testability
+34
+35 The things we argue about can be measured on a built module without touching the CM4 or motherboard.
+36
+37 ### O9 — Patient Safety and Protection
+38
+39 Every electrode meets the single-fault DC limit, protection is designed and pulse-tested, and every new element that
+crosses the isolation barrier is rated for it.
+40
+41 ### O10 — Compatibility and Drop-In Constraint
+42
+43 The V4 module is a drop-in replacement: same header and pin functions, no CM4 or ADS1293 change, and old firmware
+cannot produce a silently wrong result on it.
