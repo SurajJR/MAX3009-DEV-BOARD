@@ -1,0 +1,77 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "3b18c8ea-146a-4bce-a456-51e3df01e1af")
+	(paper "A4")
+	(title_block
+		(title "ICG-BIA/BIS DRIVER BOARD SCHEMATICS")
+		(date "2026-09-26")
+		(rev "V3R0")
+	)
+	(lib_symbols)
+	(text "ICG-BIA/BIS DRIVER BOARD HW BLOCK DIAGRAM"
+		(exclude_from_sim no)
+		(at 157.226 23.114 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(bold yes)
+			)
+		)
+		(uuid "1faa820d-b7c1-4172-9179-38612db6acd8")
+	)
+	(sheet
+		(at 228.6 97.79)
+		(size 20.32 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5fb3ca83-0793-4e27-96df-1f6f1480579e")
+		(property "Sheetname" "SCHEMATIC"
+			(at 228.6 97.0784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "schematic.kicad_sch"
+			(at 228.6 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MAX_breakout-board_V3"
+				(path "/3b18c8ea-146a-4bce-a456-51e3df01e1af"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
